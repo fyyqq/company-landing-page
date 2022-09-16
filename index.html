@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5e539df1ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Repace</title>
+</head>
+<body>
+    <div class="container" id="home">
+        <nav class="navbar-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <h3>Repace</h3>
+                </a>
+            </div>
+            <ul class="navbar">
+                <a href="#home" class="navList" onclick="myList(0)">Home</a>
+                <a href="#about" class="navList" onclick="myList(1)">About</a>
+                <a href="#explore" class="navList" onclick="myList(2)">Explore</a>
+                <a href="#contact" class="navList" onclick="myList(3)">Contact</a>
+                <div class="sign-btn">
+                    <button class="btn signUp-btn">sign up</button>
+                </div>
+            </ul>
+            <div class="navbar-menu" onclick="menu(this)">
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </div>
+        </nav>
+        <div class="bg-modal"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="close-btn">
+                    <button id="close-modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-text">
+                    <h3>Create Account</h3>
+                </div>
+                <form class="modal-form">
+                    <div class="nickname-input input">
+                        <label>Nickname : </label>
+                        <input type="text" name="names" id="names" placeholder="Type your nickname..." required>
+                    </div>
+                    <div class="email-input input">
+                        <label>Email Address :</label>
+                        <input type="email" name="email" id="email" placeholder="Type your email..." required>
+                    </div>
+                    <div class="pass-input input">
+                        <label>Password :</label>
+                        <input type="password" name="password" id="password" placeholder="Type your password..." required>
+                        <div class="showPass">
+                            <span class="material-symbols-outlined" id="show_password">
+                                visibility
+                            </span>
+                            <span class="material-symbols-outlined" id="hide_password">
+                                visibility_off
+                            </span>
+                            <span class="material-symbols-outlined" id="del_password">
+                                close
+                            </span>
+                        </div>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox" name="check" id="check" required>
+                        <label for="check">Remember Me</label>
+                    </div>
+                </form>
+                <div class="modal-btn">
+                    <button>Sign Up</button>
+                </div>
+                <small style="opacity: 0;">s</small>
+                <p style="background-color:rgb(197, 197, 197);width:90%;height:1px;margin: 0 auto;"></p>
+                <div class="google-signup">
+                    <a href="#googleSignUp">
+                        <button>
+                            <img src="./images/google-logo.png" width="20">
+                            <p>Sign up with Google</p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-container">
+                <div class="header-text">
+                    <div class="head-text-content">
+                        <h1 id="title">Connected In Virtual World</h1>
+                        <p id="desc">Now We Can Work, Play, Shopping & Discover In Metaverse</p>
+                        <div class="head-btn">
+                            <a href="#about">
+                                <button class="more-btn">Read More
+                                    <div class="slide-btn"></div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="about"></span>
+            <span class="material-symbols-outlined" id="swipe-icon-desktop">
+                keyboard_double_arrow_down
+            </span>
+        </header>
+    </div>
+    <section class="about-container">
+        <div class="about-title">
+            <h3>What is Metaverse ?</h3>
+        </div>
+        <div class="about-content">
+            <div class="about-desc">
+                <p class="desc">
+                    <b style="font-size: 16px;">The term Metaverse</b> is used to describe a combination of the virtual reality and mixed reality worlds accessed through a browser or headset, which allows people to have real time interactions and experiences across distance. Broadly speaking, the technologies companies refer to when they talk about “the metaverse” can include virtual reality—characterized by persistent virtual worlds that continue to exist even when you're not playing—as well as augmented reality that combines aspects of the digital and physical worlds.
+                </p>
+                <div class="btn-desc">
+                    <a href="https://en.wikipedia.org/wiki/Metaverse" target="_blank" class="link-desc">
+                        <p>More at Wikipedia</p>
+                        <span class="material-symbols-outlined">
+                            navigate_next
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <span id="explore"></span>
+    </section>
+    <a href="#home" class="slidetop">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <section class="explore-container">
+        <div class="explore-title-1">
+            <h3>Virtual Reality Headset</h3>
+        </div>
+        <div class="explore-content">
+            <div class="content">
+                <div class="img-1">
+                    <img src="https://static.bhphotovideo.com/explora/sites/default/files/ts_oculus-quest-2.png">
+                </div>
+                <div class="desc-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod ad perferendis autem nostrum suscipit? Et, fuga ullam. Sequi, error tempora fugiat eum porro aspernatur.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-2">
+                    <img src="https://i.ytimg.com/vi/3vPz9KFXWTk/maxresdefault.jpg">
+                </div>
+                <div class="desc-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores iure tempore deserunt eos, nobis praesentium nulla quibusdam, officia, enim id saepe. Quos, rem nam?</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-3">
+                    <img src="https://static.bhphotovideo.com/explora/sites/default/files/styles/960/public/ts-oculus-quest-hands-on-review.png?itok=NdInzVFL">
+                </div>
+                <div class="desc-3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, consequuntur quisquam dolorum dignissimos nobis repellat perspiciatis culpa velit non vel, odio sequi exercitationem fugit assumenda?</p>
+                </div>
+            </div>
+        </div>
+        <div class="explore-content-2">
+            <div class="title">
+                <h3>Metaverse Equipment For Better Experience</h3>
+            </div>
+        </div>
+        <div class="explore-content-3">
+            <div class="title">
+                <h3>What We Actually We Can Do In Metaverse</h3>
+            </div>
+        </div>
+        <div class="explore-feedback">
+            <div class="title">
+                <h3>Feedback</h3>
+            </div>
+        </div>
+    </section>
+    <section class="contact-container" id="contact"></section>
+    <script src="./main.js"></script>
+</body>
+</html>
